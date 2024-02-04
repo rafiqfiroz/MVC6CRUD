@@ -1,0 +1,4 @@
+2024-02-04 11:37:35.947 +06:00 [INF] Entity Framework Core 6.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-02-04 11:37:36.109 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryName] AS [Text], CONVERT(varchar(11), [c].[CategoryId]) AS [Value]
+FROM [Categories] AS [c]

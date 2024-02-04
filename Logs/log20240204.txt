@@ -1,0 +1,12 @@
+2024-02-04 11:37:31.569 +06:00 [INF] Entity Framework Core 6.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-02-04 11:37:32.626 +06:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Color], [p].[CreateDate], [p].[Description], [p].[Image], [p].[Name], [p].[Price], [p].[UpdatedDate]
+FROM [Products] AS [p]
+2024-02-04 11:37:33.015 +06:00 [INF] Executed DbCommand (42ms) [Parameters=[@__model_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryName]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryId] = @__model_CategoryId_0
+2024-02-04 11:37:33.041 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryName]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryId] = @__model_CategoryId_0
