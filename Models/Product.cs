@@ -15,5 +15,8 @@ namespace MVC6CRUD.Models
         public int Price { get; set; }
         public string? Image { get; set; }
         public int CategoryId { get; set; }
+        public DateTime CreateDate { get; set; }
+
+        public DateTime UpdatedDate { get; set; }
     }
 }
